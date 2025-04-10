@@ -9,7 +9,7 @@ let subtracao = num1 - num2
 let multiplicacao = num1 * num2
 let divisao = num1 / num2
 
-let operadores = `${org} \n Soma dos numeros ${num1} e ${num2} é ${soma} \n Subtração dos numeros ${num1} e ${num2} é ${subtracao} \n Multiplicação dos numeros ${num1} e ${num2} é ${multiplicacao} \n divisao dos numeros ${num1} e ${num2} é ${divisao}`
+let operadores = `${org} \n Soma dos numeros ${num1} e ${num2} é: ${soma} \n Subtração dos numeros ${num1} e ${num2} é: ${subtracao} \n Multiplicação dos numeros ${num1} e ${num2} é: ${multiplicacao} \n divisao dos numeros ${num1} e ${num2} é: ${divisao}`
 console.log(operadores)
 console.log(org)
 
@@ -26,7 +26,7 @@ console.log(org)
 let idade = 15
 
 console.log(org)
-let compa = idade >= 18 ? " Maior de Idade" : " Menor de Idade"
+let compa = idade >= 18 ? ` Idade: ${idade} é Maior de Idade` : ` Idade: ${idade} é Menor de Idade`
 console.log(compa)
 console.log(org)
 
