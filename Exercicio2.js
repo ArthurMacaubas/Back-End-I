@@ -34,6 +34,6 @@ console.log(org)
 let num = 8
 
 console.log(org)
-let op = num % 2 ? ` Numero: ${num} é ÍMPAR` : ` Numero: ${num} é PAR`
+let op = num % 2 == 0 ? ` Numero: ${num} é PAR` : ` Numero: ${num} é ÍMPAR`
 console.log(op)
 console.log(org)
