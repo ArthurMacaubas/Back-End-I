@@ -1,9 +1,9 @@
 // Atividade 1
 
 let nome = "Arthur Macaúbas"
-let idade = "15"
+let idade = 15
 
-console.log("Olá, meu nome é", nome ,"e eu tenho", idade ,"anos")
+console.log(`Olá, meu nome é ${nome} e eu tenho ${idade} anos.`)
 
 // Atividade 2
 let string = "Meu nome"
@@ -27,4 +27,4 @@ console.log(numero)
 let peso = 57
 let altura = 1.75
 let imc = peso / (altura * altura)
-console.log(imc)
+console.log(imc) 
