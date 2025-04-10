@@ -18,7 +18,7 @@ let age1 = 42
 let age2 = 45
 
 console.log(org)
-let comparacao = age1 >= age2 ? ` pessoa de: ${age1} anos é mais Velha` : ` pessoa de: ${age2} anos é mais Velha`
+let comparacao = age1 > age2 ? ` pessoa de: ${age1} anos é mais Velha` : ` pessoa de: ${age2} anos é mais Velha`
 console.log(comparacao)
 console.log(org)
 
