@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "name": "back-end-i",
+  "version": "1.0.0",
+  "main": "Exercicio1.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurMacaubas/Back-End-I.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurMacaubas/Back-End-I/issues"
+  },
+  "homepage": "https://github.com/ArthurMacaubas/Back-End-I#readme",
+  "description": ""
+}
