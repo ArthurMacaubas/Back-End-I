@@ -1,67 +1,132 @@
-// Atividade 1
+import abc from "readline-sync";
 
-let colegas = ["Ana", "Bruno", "Carlos", "Daniela", "Eduardo"];
-console.log(colegas[2]);
-colegas.push("Fernanda");
-colegas.shift();
-console.log(colegas);
+// //tividade 1
+// let semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
+// let dia = abc.question("insira um número representando um dia da semana (1 a 7): ")
 
-// Atividade 2
 
-let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-numeros.reverse();
-console.log(numeros);
-numeros.sort((a, b) => a - b);
-console.log(numeros);
-let numerosString = numeros.join("-");
-console.log(numerosString);
+// switch (dia) {
+//     case dia = "1":
+//         console.log(semana[0])
+//         break
+//     case dia = "2":
+//         console.log(semana[1])
+//         break
+//     case dia = "3":
+//         console.log(semana[2])
+//         break
+//     case dia = "4":
+//         console.log(semana[3])
+//         break
+//     case dia = "5":
+//         console.log(semana[4])
+//         break
+//     case dia = "6":
+//         console.log(semana[5])
+//         break
+//     case dia = "7":
+//         console.log(semana[6])
+//         break
+//     default:
+//         console.log("Dia errado, Selecione um dia Válido! ")
+//         break 
+// }
+// // Atividade 2
 
-//Atividade 3
+// let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+// let mes = abc.question("insira um número de mês (1 a 12): ")
 
-let notas = [6.5, 7.0, 5.5, 8.0];
-let soma = notas.reduce((acc, nota) => acc + nota, 0);
-let media = soma / notas.length;
-console.log(media);
-if (media >= 6) {
-    console.log("A média é maior ou igual a 6.");
-} else {
-    console.log("A média é menor que 6.");
-}
+// switch (mes) {
+//     case mes = "1":
+//         console.log(meses[0])
+//             break
+//     case mes = "2":
+//         console.log(meses[1])
+//             break
+//     case mes = "3":
+//         console.log(meses[2])
+//             break
+//     case mes = "4":
+//         console.log(meses[3])
+//             break
+//     case mes = "5":
+//         console.log(meses[4])
+//             break
+//     case mes = "6":
+//         console.log(meses[5])
+//             break
+//     case mes = "7":
+//         console.log(meses[6])
+//             break
+//     case mes = "8":
+//         console.log(meses[7])
+//             break
+//     case mes = "9":
+//         console.log(meses[8])
+//             break
+//     case mes = "10":
+//         console.log(meses[9])
+//             break
+//     case mes = "11":
+//         console.log(meses[10])
+//             break
+//     case mes = "12":
+//         console.log(meses[11])
+//             break
+//     default:
+//         console.log("Mês errado! Informe o numero (1 - 12) de um mês Válido!")
+//         }
+
+
+// // Atividade 3 
+// let a = abc.questionFloat("Informe o primeira numero: ")
+// let operacao = abc.question("Informe a operação que deseja: ")
+// let b = abc.questionFloat("Informe o segundo numero: ")
+
+// let divisao = [a / b]
+// let adicao = [a + b]
+// let multiplicao = [a * b]
+// let subtracao = [a - b]
+
+// switch(a,b,operacao){
+//     case a,b,operacao = "*":
+//         console.log("O resultado será igual a:",multiplicao)
+//         break
+
+//     case a,b,operacao = "-":
+//         console.log("O resultado será igual a:",subtracao)
+//         break
+
+//     case a,b,operacao = "+":
+//         console.log("O resultado será igual a:",adicao)
+//         break
+
+//     case a,b,operacao = "/":
+//         console.log("O resultado será igual a:",divisao)
+//         break
+
+// }
 
 // Atividade 4
 
-let frutas = ["banana", "maçã", "pera", "uva", "melão"];
-let comA = frutas.filter(fruta => fruta.includes("a"));
-console.log(comA);
-if (!frutas.includes("abacate")) {
-    frutas.push("abacate");
-}
-console.log(frutas);
+let salario = abc.questionFloat("Informe Seu Salário: ")
+let resposta = abc.question("Informe Sua Categoria (A, B, C, D): ")
+let A = 5; let B = 10; let C = 15; let D = 20;
 
-// Atividade 5
-
-let carrinho = [];
-function adicionarItem(item) {
-    carrinho.push(item);
+switch (resposta){
+    case resposta = "A":
+        console.log("Seu novo salario é: ", (salario * 1.05))
+        break
+    case resposta = "B":
+        console.log("Seu novo salario é: ", (salario * 1.1))
+        break
+    case resposta = "C":
+        console.log("Seu novo salario é: ", (salario * 1.15))
+        break
+    case resposta = "D":
+        console.log("Seu novo salario é: ", (salario * 1.2))
+        break
+    default:
+        console.log("Informe uma categoria Válida!")
+        break
 }
-function removerItem(item) {
-    let index = carrinho.indexOf(item);
-    if (index !== -1) {
-    carrinho.splice(index, 1);
-    }
-}
-function listarItens() {
-    console.log("Itens no carrinho:", carrinho);
-}
-adicionarItem("Produto 1");
-adicionarItem("Produto 2");
-removerItem("Produto 1");
-listarItens();
-
-// Atividade 6
-
-let numeros6 = [10, 5, 8, 2, 7];
-let soma6 = numeros.reduce((acc, val) => acc + val, 0);
-let produto = numeros.reduce((acc, val) => acc * val, 1);
-console.log(soma);
-console.log(produto);
